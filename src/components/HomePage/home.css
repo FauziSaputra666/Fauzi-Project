@@ -1,0 +1,42 @@
+* {
+  background-color: rgb(255, 132, 0);
+}
+.title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  font-style:normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  margin-top: 200px;
+}
+.fade-on-scroll {
+  transition: opacity 0.5s;
+}
+
+.fade-on-scroll.hide {
+  opacity: 0;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-justify {
+  text-align: justify;
+  color: white;
+  font-weight: bold;
+}
