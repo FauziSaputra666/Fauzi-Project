@@ -1,51 +1,43 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
-import { Row, Col } from "reactstrap";
 
 const Header = () => {
-  const [hideImage, setHideImage] = useState(false);
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 200) {
-      setHideImage(true);
-    } else {
-      setHideImage(false);
-    }
+  let data = {
+    text: {
+      title: "Nikmati Sekarang",
+      description:
+        "Coca-Cola adalah minuman ringan berkarbonasi yang diperkenalkan pada 1886 oleh John Stith Pemberton. Diproduksi oleh The Coca-Cola Company, Coca-Cola telah menjadi merek ikonik global yang dikenal karena rasa khasnya yang menyegarkan. Tersedia di lebih dari 200 negara, Coca-Cola melambangkan kebersamaan dan kenikmatan hidup.",
+      tombol: "Learn More",
+    },
+    image: {
+      src: "/images/homepict.png",
+    },
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="container">
-      <Row>
-        <Col md={6}>
-          <img
-            className={`img-fluid bounce fade-on-scroll ${
-              hideImage ? "hide" : ""
-            }`}
-            src="/images/homepict.png"
-            width="65%"
-            alt="Home Image"
-          ></img>
-        </Col>
-        <Col md={6}>
-          <h2 className="title">Fanta</h2>
-          <p className="text-justify">
-            Fanta adalah minuman bersoda dengan rasa buah yang menyegarkan. Rasa
-            yang paling terkenal adalah jeruk, tetapi Fanta juga hadir dalam
-            berbagai varian rasa lainnya. Minuman ini sangat populer di seluruh
-            dunia dan sering dinikmati sebagai minuman dingin.
-          </p>
-        </Col>
-      </Row>
-    </div>
+    <section
+      style={{
+        backgroundColor: "#fe001a",
+      }}
+    >
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-6 text-center">
+            <img
+              className="img-fluid bounce"
+              src={data.image.src}
+              width="80%"
+              alt="Home Image"
+            />
+          </div>
+          <div className="col-md-6">
+            <h2 className="title">{data.text.title}</h2>
+            <p className="text-center">{data.text.description}</p>
+            <button className="button-home">{data.text.tombol}</button>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
