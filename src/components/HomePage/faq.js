@@ -64,7 +64,7 @@ const Faq = (args) => {
   return (
     <section
       style={{
-        backgroundColor: "#fe001a",
+        backgroundColor: "#A52A2A",
         padding: "50px 0",
         marginTop: "30px",
       }}
@@ -75,7 +75,7 @@ const Faq = (args) => {
           <div className="col-md-5">
             <img className="img-fluid" src="/images/faq.png" alt="FAQ" />
           </div>
-          <div className="col-md-7 text-center">
+          <div className="col-md-7">
             <h4
               style={{
                 color: "white",

@@ -16,21 +16,21 @@ const AboutContent = () => {
   return (
     <section
       style={{
-        backgroundColor: "#fe001a",
+        backgroundColor: "#A52A2A",
       }}
     >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
             <h2 className="title">{data.text.title}</h2>
-            <p className="text-center">{data.text.deskripsi}</p>
+            <p className="text-center" style={{color: "white"}}>{data.text.deskripsi}</p>
           </div>
           <div className="col-md-6">
             <img
               className="img-fluid bounce"
               src={data.image.foto}
               alt="logo"
-              width="100%"
+              width="80%"
             ></img>
           </div>
         </div>

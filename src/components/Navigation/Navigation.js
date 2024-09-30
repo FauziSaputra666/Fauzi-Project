@@ -14,12 +14,7 @@ const Navigation = () => {
   return (
     <nav className="nav">
       <div className="logo-container" onClick={() => navigate("/")}>
-        <img
-          src="/images/logo.png"
-          width="150px"
-          alt="logo"
-          className="logo"
-        />
+        <img src="/images/logo.png" width="150px" alt="logo" className="logo" />
       </div>
 
       <div
@@ -34,6 +29,9 @@ const Navigation = () => {
       <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink to="/">Beranda</NavLink>
+        </li>
+        <li>
+          <NavLink to="/product">Produk</NavLink>
         </li>
         <li>
           <NavLink to="/about">Tentang Kami</NavLink>

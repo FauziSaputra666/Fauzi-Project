@@ -6,17 +6,43 @@ const Footer = () => {
   return (
     <>
       <footer id="footer">
-        <div className="footer-bottom" style={{ backgroundColor: "black" }}>
+        <div
+          className="footer-bottom"
+          style={{ backgroundColor: "black", padding: "20px 0" }}
+        >
           <div className="container">
             <Row>
-              <Col md={6}>
-                <img src="/images/logo.png" alt="logo" width="200px"></img>
-              </Col>
               <Col md={9}>
-              <h6 style={{ color: "white" }}>© 2024 The Coca‑Cola Company. All rights reserved.</h6>
+                <img src="/images/logo.png" alt="logo" width="200px" />
               </Col>
-              <hr className="divider" style={{ color: "white" }}></hr>
-          
+              <Col md={3}>
+                <p style={{ color: "white" }}>
+                  The Coca‑Cola Company <br />
+                  Atlanta, Georgia, Amerika Serikat <br />
+                  Phone: 0800 100 2653 <br />
+                  <a
+                    href="mailto:info@coca-cola.co.id"
+                    target="_blank"
+                    style={{ color: "white" }}
+                  >
+                    Email: info@coca-cola.com
+                  </a>
+                </p>
+              </Col>
+
+              <Col md={12}>
+                <p
+                  style={{
+                    color: "gray",
+                    fontSize: "12px",
+                    textAlign: "center",
+                    marginTop: "20px",
+                  }}
+                >
+                  © {currentYear} The Coca‑Cola Company. All rights reserved.
+                  Developed by Fauzi Saputra.
+                </p>
+              </Col>
             </Row>
           </div>
         </div>

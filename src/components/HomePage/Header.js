@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./home.css";
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <section
       style={{
-        backgroundColor: "#fe001a",
+        backgroundColor: "#A52A2A",
       }}
     >
       <div className="container">
@@ -32,8 +32,7 @@ const Header = () => {
           </div>
           <div className="col-md-6">
             <h2 className="title">{data.text.title}</h2>
-            <p className="text-center">{data.text.description}</p>
-            <button className="button-home">{data.text.tombol}</button>
+            <p className="text-center" style={{ color: "white" }}>{data.text.description}</p>
           </div>
         </div>
       </div>

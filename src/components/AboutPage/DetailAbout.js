@@ -25,7 +25,7 @@ const DetailAbout = () => {
     >
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
             <img
               className="img-fluid text-center rounded"
               src={data.image.src1}
@@ -47,7 +47,7 @@ const DetailAbout = () => {
             </h2>
             <p style={{ fontSize: "18px" }}>{data.deskripsi.desk2}</p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
             <img
               className="img-fluid text-center rounded"
               src={data.image.src2}

@@ -14,12 +14,12 @@ const HistoryContent = () => {
   };
 
   return (
-    <section style={{ backgroundColor: "#fe001a", padding: "50px 0" }}>
+    <section style={{ backgroundColor: "#A52A2A", padding: "50px 0" }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
             <img
-              className="img-fluid rounded"
+              className="img-fluid rounded bounce"
               src={data.images.img1}
               width="80%"
               alt="Home Image"

@@ -25,7 +25,7 @@ const VisiMisi = () => {
   return (
     <section
       style={{
-        backgroundColor: "#fe001a",
+        backgroundColor: "#A52A2A",
         padding: "50px 0",
         marginTop: "30px",
       }}
