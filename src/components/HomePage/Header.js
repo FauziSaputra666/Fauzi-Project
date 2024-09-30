@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <section
       style={{
-        backgroundColor: "#A52A2A",
+        backgroundColor: "#bf1004",
       }}
     >
       <div className="container">

@@ -64,7 +64,7 @@ const Faq = (args) => {
   return (
     <section
       style={{
-        backgroundColor: "#A52A2A",
+        backgroundColor: "#bf1004",
         padding: "50px 0",
         marginTop: "30px",
       }}

@@ -14,7 +14,7 @@ const HistoryContent = () => {
   };
 
   return (
-    <section style={{ backgroundColor: "#A52A2A", padding: "50px 0" }}>
+    <section style={{ backgroundColor: "#bf1004", padding: "50px 0" }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
